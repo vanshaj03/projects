@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* .container2{
+        background-color:#645CBB ;
+    } */
+   
+    .tableDiv {
+        margin: 10px 200px;
+        padding: 60px 40px;
+        border-radius: 10px;
+    }
+
+    .table {
+        text-align: center;
+    }
+
+    .teachForm input {
+        width: 300px;
+    }
+
+    .tableDiv {
+        margin: 10px 200px;
+        padding: 60px 40px;
+        border-radius: 10px;
+    }
+
+    .table {
+        text-align: center;
+    }
+
+    .allstudent {
+        text-align: center;
+    }
+
+   
+    .navbar {
+      height: 27px;
+      padding: 23px;
+      margin-top: -8px;
+      margin-right: -7px;
+
+
+
+      background-color: #3E54AC;
+      margin-left: -293px;
+    }
+
+    .navbar-text {
+      font-size: 25px;
+      color: white;
+      font-weight: bold;
+      margin-left: 50%;
+    }
+</style>
+
+<body>
+    <nav class="navbar">
+        <div class="container1">
+            <a class="navbar-text" href="intro page.html">Result Management System</a>
+        </div>
+    </nav>
+    <div class="container2">
+        <a href="teacheroption.html" class="btn" style="margin-top:5px;">Back</a>
+    <h4 class="allstudent">All Students</h4>
+    <div class="tableDiv">
+        <table class="table table-entries">
+            <thead>
+                <tr>
+                    <th>Roll No.</th>
+                    <th>Name</th>
+                    <th>Date of Birth</th>
+                    <th>Score</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                    <tr class="head">
+                        <td>
+                            
+                            E228
+                        </td>
+                        <td>
+                            
+                            Vanshaj
+                        </td>
+                        <td>
+                            
+                            12/09/2003
+                        </td>
+                        <td>
+                            
+                            34
+                        </td>
+                        <td>
+                            <a href="/teacher/edit/<%= element._id %> "><img style="margin: 0px 5px;"
+                                    src="https://img.icons8.com/material-outlined/30/000000/edit.png" /></a>
+                            <a href="/teacher/delete/<%= element._id %> "><img style="margin: 0px 5px;"
+                                    src="https://img.icons8.com/ios-glyphs/30/000000/filled-trash.png" /></a>
+                        </td>
+                    </tr>
+                    <tr class="head">
+                        <td>
+                            
+                            E244
+                        </td>
+                        <td>
+                            
+                            abhinav
+                        </td>
+                        <td>
+                            
+                            12/06/2002
+                        </td>
+                        <td>
+                            
+                            100
+                        </td>
+                        <td>
+                            <a href="/teacher/edit/<%= element._id %> "><img style="margin: 0px 5px;"
+                                    src="https://img.icons8.com/material-outlined/30/000000/edit.png" /></a>
+                            <a href="/teacher/delete/<%= element._id %> "><img style="margin: 0px 5px;"
+                                    src="https://img.icons8.com/ios-glyphs/30/000000/filled-trash.png" /></a>
+                        </td>
+                    </tr>
+                    <!-- <%}) %> -->
+            </tbody>
+        </table>
+    </div>
+    </div>
+    
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="rough3.js"></script>
+</head>
+<style>
+    .navbar {
+      height: 27px;
+      padding: 23px;
+      margin-top: -8px;
+      margin-right: -7px;
+
+
+
+      background-color: #3E54AC;
+      margin-left: -293px;
+    }
+
+    .navbar-text {
+      font-size: 25px;
+      color: white;
+      font-weight: bold;
+      margin-left: 50%;
+    }
+    .addStu {
+        border-width: 2px;
+        padding: 60px 40px;
+        border-radius: 10px;
+        margin: 0 300px;
+    }
+
+    .stuTable {
+        border-width: 2px;
+        padding: 60px 40px;
+        border-radius: 10px;
+        margin: 0px 200px;
+        margin-bottom: 50px;
+    }
+
+    .btn {
+        margin-right: 30px;
+        font-weight: bold;
+    }
+
+    h4 {
+        font-size: 20px;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: -40px;
+        text-transform: capitalize;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .container {
+        text-align: center;
+        border: 2px black;
+        width: 100%;
+
+    }
+    .addStu{
+        color: white;
+        font-family: sans-serif;
+        border: 6px solid white;
+        border-radius: 25px;
+        margin-top: 80px;
+        margin-left: 23%;
+        margin-right: 50%;
+        padding: 25px;
+        width :50%;
+        background-color: #645CBB;
+        
+    }
+</style>
+
+<body>
+    <nav class="navbar">
+        <div class="container1">
+            <a class="navbar-text" href="intro page.html">Result Management System</a>
+        </div>
+    </nav>
+    <button>
+        <a href="teacheroption.html" class="btn" style="margin-top:5px;">Back</a>
+    </button>
+    
+    <h4>Add Student-Result</h4>
+    <div class="container">
+        <form  class="addStu" action="/addstudent.html" method="post">
+            <div class="1">
+                <label for="Rollno" class="form-label">Roll No. : </label>
+                <br>
+                <input type="text" name="roll" required class="form-control" id="roll">
+            </div>
+
+            <div class="1">
+                <label for="name" class="form-label">Name : </label>
+                <br>
+                <input type="text" name="name" required class="form-control" id="name">
+            </div>
+
+            <div class="1">
+                <label for="dob" class="form-label">Date of Birth : </label>
+                <br>
+                <input type="date" name="dob" class="form-control" id="date">
+            </div>
+            <div class="1">
+                <label for="score" class="form-label">Score : </label>
+                <br>
+                <input type="text" name="score" required class="form-control" id="number">
+            </div>
+            <button type="submit" class="btn"  >Add</button>
+            <!-- <button>
+                <a href="viewallstudents.html" class="btn">View All</a>
+            </button> -->
+            
+        </form>
+
+    </div>
+
+
+</body>
+
+</html>

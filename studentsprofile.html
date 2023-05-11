@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student's profile</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<style>
+    body{
+        background-color: #BFACE2;
+    }
+    
+    .container{
+        text-align: center;
+        border: 2px black;
+        width: 100%;
+        
+        /* padding: 20px; */
+    }
+    .h1{
+        border: 6px solid white;
+        font-family: sans-serif;
+        color: white;
+        width: 100%;
+        margin-top: 5%;
+        border-radius: 25px;
+        background-color: #645CBB;
+    }
+    .forms{
+        color: white;
+        font-family: sans-serif;
+        border: 6px solid white;
+        border-radius: 25px;
+        margin-top: 80px;
+        margin-left: 23%;
+        padding: 25px;
+        width :50%;
+        background-color: #645CBB;
+        
+    }
+    #f1{
+        margin: 25px;
+    }
+    #f2{
+        margin: 25px;
+    }
+    #f3{
+        margin: 25px;
+        text-decoration: none;
+    }
+  
+   
+    
+    .navbar{
+    height: 27px;
+    padding: 23px;
+    margin-top: -7px;
+    margin-right: -8px;
+    background-color: #3E54AC;
+    margin-left: -293px;    
+    }
+    .navbar-text{
+    font-size: 25px;
+    color: white ;
+    font-weight: bold;
+    margin-left: 50%;
+    }
+
+
+</style>
+<body>
+    <nav class="navbar">
+        <div class="container1">
+          <a class="navbar-text" href="intro page.html">Result Management System</a>     
+     </div>
+    </nav>
+    <div class="container">
+        <div class="h1">
+            <h1>Student's Profile</h1>
+        </div>
+        <div class="forms">
+            <form name="myForm">
+                <div id="f1">
+                    <!-- <p>Name:
+                        <input name="myName" ng-model="myName" required>
+                        <span ng-show="myForm.myName.$touched && myForm.myName.$invalid">The name is required.</span>
+                    </p> -->
+                    
+                    <label for="Username" >Username</label>
+                    <input type="text" name="Username" id="user" onblur="myfunction()"><br>
+                    <div id="div1"></div>
+                </div>
+                <div id="f2">
+                    <label for="Password" id = "Password">Password</label>
+                    <input type="text" name="Password" id="password" onblur="myfunction()"><br>
+                    <div id="div2"></div>
+                    
+                </div>
+                <div id="f3">
+                    <button>
+                        <a href="studentview.html" class="submit" >Submit</a>
+                    </button>
+                
+                </div>
+                
+                
+                
+            </form>
+        </div>
+    </div>
+    <script>
+        function myfunction(){
+            var UserName = document.getElementById("user")
+            if(UserName.value ==""){
+                    document.getElementById("div1").innerHTML="*Enter yor Username*"
+                    }
+            var Password = document.getElementById("password")
+            if(Password.value ==""){
+                    document.getElementById("div2").innerHTML="*Enter your password*"
+                    }
+
+        }
+            
+
+
+                   
+                    
+
+
+
+    </script>
+    
+</body>
+</html>

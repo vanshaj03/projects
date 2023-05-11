@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher's profile</title>
+    <script src="index1.js"></script>
+
+
+</head>
+<style>
+    body {
+        background-color: #BFACE2;
+    }
+
+    .container {
+        text-align: center;
+        border: 2px black;
+        width: 100%;
+
+        /* padding: 20px; */
+    }
+
+    .h1 {
+        border: 6px solid white;
+        font-family: sans-serif;
+        color: white;
+        width: 100%;
+        margin-top: 5%;
+        border-radius: 25px;
+        background-color: #645CBB;
+    }
+
+    .forms {
+        color: white;
+        font-family: sans-serif;
+        border: 6px solid white;
+        border-radius: 25px;
+        margin-top: 80px;
+        margin-left: 23%;
+        margin-right: 50%;
+        padding: 25px;
+        width: 50%;
+        background-color: #645CBB;
+
+    }
+
+    #f1 {
+        margin: 25px;
+    }
+
+    #f2 {
+        margin: 25px;
+    }
+
+    #f3 {
+        margin: 25px;
+    }
+
+    #div1 {
+        color: red;
+        margin: 10px;
+    }
+
+    #div2 {
+        color: red;
+        margin: 10px;
+    }
+
+    .navbar {
+        height: 27px;
+        padding: 23px;
+        margin-top: -7px;
+        margin-right: -8px;
+
+
+
+        background-color: #3E54AC;
+        margin-left: -293px;
+    }
+
+    .navbar-text {
+        font-size: 25px;
+        color: white;
+        font-weight: bold;
+        margin-left: 50%;
+    }
+
+    .b-button {
+        text-decoration: none;
+        background-color: #645CBB;
+        color: white;
+        text-align: center;
+        border-radius: 2px;
+        /* border: 2px solid white; */
+        margin-top: 5px;
+
+        width: 45px;
+    }
+
+    .submit {
+        text-decoration: none;
+    }
+</style>
+
+<body ng-app="">
+    <nav class="navbar">
+        <div class="container1">
+            <a class="navbar-text" href="intro page.html">Result Management System</a>
+        </div>
+    </nav>
+    <div class="b-button">
+        <a href="intro page.html" style="margin-top:5px; color: white;">Back</a>
+    </div>
+
+    <div class="container">
+        <div class="h1">
+            <h1>Teacher's Profile</h1>
+        </div>
+        <div class="forms">
+
+            <form action="/teachersprofile.html" method="post">
+                <div id="f1">
+                    <label for="Username">Username</label>
+                    <input type="text" name="username" id="user" onblur="myfunction()"><br>
+                    <div id="div1"></div>
+                </div>
+                <label for="Password1" class="form-label">Password : </label>
+                <input type="password" name="pass" class="form-control" id="pass1">
+                <br>
+                <input type="checkbox" style="width: 30px;" onclick="myFunction()">Show Password
+                <br>
+
+        </div>
+        <button value="submit">
+            Submit
+
+        </button>
+
+        <!-- <a href="teacheroption.html"><button type="submit"  class="btn btn-primary">Submit</button></a> -->
+        </form>
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("pass1");
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
